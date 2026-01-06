@@ -5,6 +5,7 @@ Personal DxD11 game engine created at SMU Guildhall
   - Contains folder structures for AI, Animation, Audio, Core, Input, Math, Networking, Rendering, Skeleton, UI, and Window
   - Substantial math utils library and vertex utils library
   - Rendering with Directx11
+  - Supports 2D and 3D rendering
   - Custom made engine subsystems:
     - Input System
     - Audio System
@@ -36,4 +37,18 @@ Personal DxD11 game engine created at SMU Guildhall
     - Folder contains files for AudioSystem
     - Utilizes the FMOD library
     - Has functions for getting sound from file path, playing sound at 2D or 3D positions, and setting number of listeners.
+---
+### DevConsole
+    - DevConsole works hand in hand with the EventSystem to Execute lines.
+    - Full screen render with blinking insertion point and left/right arrow navigation.
+    - Contains helpful devconsole specific static consts.
+    - Events:
+      - Event Echo Command handles echoing/printing back what was typed.
+      - Event Key Pressed handles key input, typing, and insertion point.
+      - Event Char Input handles char input by appending valid characters to current input line.
+      - Event Command Clear clears all lines of text printed currently in devconsole.
+      - Event Command Help prints out all currently registered commands from EventSystem.
+    - DevConsole holds command history
+      - Up and Down arrows navigate command hisotry.
+    - Deletes lines automatically if they go off screen.
 ---
