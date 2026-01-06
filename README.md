@@ -52,3 +52,22 @@ Personal DxD11 game engine created at SMU Guildhall
       - Up and Down arrows navigate command hisotry.
     - Deletes lines automatically if they go off screen.
 ---
+### EventSystem
+    - Can subscribe and unsubscribe events.
+    - Has functionality to fire event when called.
+    - Has global-namespace helper functions that forward to the EventSystem if it exists.
+    - Holds an array of event subscriptions, a subscription list.
+---
+### DebugRenderSystem
+    - Used for debug drawing in games.
+    - Holds visible and clear events.
+    - Debug Rendering for Text and Geometry.
+    - Debug drawn objects can stay over a period of time or be infinite.
+---
+### JobSystem
+    - Engine Subsystem used for multithreading, creating jobs on worker threads.
+    - Holds data structures for Job, JobWorkerThread, and JobSystem.
+    - JobSystem holds double ended queues for pending, executing, and completed jobs.
+    - Job Execute is handled through game code.
+---
+
