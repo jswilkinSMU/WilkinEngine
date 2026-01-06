@@ -15,3 +15,10 @@ Personal DxD11 game engine created at SMU Guildhall
     - Renderer
     - EventSystem and DevConsole
   - Uses ThirdParty stbImage, FMOD, tinyXML, and SquirrelNoise
+---
+### AI
+    - Folder contains files for BehaviorTree and BehaviorNode
+    - Simple updateable behavior tree given to entities in game
+    - Base class BehaviorNode with derived Sequence and Selector Nodes.
+    - Leaf Nodes created through game code.
+---
